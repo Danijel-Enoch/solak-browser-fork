@@ -4,10 +4,10 @@ if (process.argv.includes('--log')) { logger = require('../logger.js').log; } el
 const fs = require('fs')
 
 function data() {
-	try { 
+	try {
 		return JSON.parse(fs.readFileSync(__dirname + '/../data/settings.json', 'utf8'))
-	} catch (e) { 
-		return {} 
+	} catch (e) {
+		return {}
 	}
 }
 
@@ -23,7 +23,7 @@ function open(top) {
 		show: false,
 		width: 700,
 		height: 500,
-		title: 'Felida Browser - Settings',
+		title: 'Solak Browser - Settings',
 		icon: './assets/icon.png'
 	})
 

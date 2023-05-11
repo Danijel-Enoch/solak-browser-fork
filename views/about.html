@@ -41,7 +41,7 @@
 </head>
 
 <body>
-	<h1>Felida Browser</h1><br>
+	<h1>Solak Browser</h1><br>
 	<p class="info">A lightweight Chromium browser using Electron.js</p>
 	<img src="../assets/mascot.svg" width="200" align=left>
 	<p class="version">
@@ -69,7 +69,7 @@
 **Chrome:** ${document.getElementById("chrome").innerHTML}
 **Electron:** ${document.getElementById("electron").innerHTML}
 **NodeJS:** ${document.getElementById("node").innerHTML}`
-        	navigator.clipboard.writeText(txt)
+			navigator.clipboard.writeText(txt)
 			document.getElementById("copy").innerText = "Copied!"
 			setTimeout(() => {
 				document.getElementById("copy").innerText = "Copy information to clipboard"

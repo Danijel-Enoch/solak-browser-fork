@@ -13,7 +13,7 @@ if (process.argv.includes('--log')) { logger = require('./logger.js').log; } els
 let blocker = null
 
 console.log('Loading libraries...')
-const { BrowserWindow, BrowserView, app, ipcMain, Menu, session} = require('electron')
+const { BrowserWindow, BrowserView, app, ipcMain, Menu, session } = require('electron')
 const { ElectronBlocker, fullLists, Request } = require("@cliqz/adblocker-electron")
 const { promises } = require('fs');
 const fs = require("fs")
@@ -37,7 +37,7 @@ const BOOKMARKS_TEMPLATE = [
 		url: "https://github.com"
 	},
 	{
-		title: "Felida Browser",
+		title: "Solak Browser",
 		icon: "file:///home/raluca/Desktop/devs/FelidaBrowser/assets/icon.png",
 		url: "https://github.com/raluvy95/FelidaBrowser"
 	},
@@ -59,7 +59,7 @@ const BOOKMARKS_TEMPLATE = [
 ]
 
 console.log(__dirname)
-if(!fs.existsSync(__dirname + '/data/')) {
+if (!fs.existsSync(__dirname + '/data/')) {
 	// this will create necessary files upon first run
 	fs.mkdirSync(__dirname + '/data/')
 	fs.appendFileSync(__dirname + '/data/settings.json', '{}')
@@ -106,11 +106,11 @@ class FelidaBrowser {
 				contextIsolation: false,
 				nodeIntegration: true
 			},
-			title: 'Felida Browser',
+			title: 'Solak Browser',
 			icon: './assets/icon.png',
 			show: false,
 		});
-		  
+
 		this.mainWindow.once("ready-to-show", () => {
 			this.mainWindow.show()
 			this.mainWindow.focus()
@@ -196,7 +196,7 @@ class FelidaBrowser {
 
 		ipcMain.on('newTab', (event, url) => {
 			this.updateSizes();
-			if(!url) url = `file:///${__dirname}/views/index.html`
+			if (!url) url = `file:///${__dirname}/views/index.html`
 			event.returnValue = this.newTab(url);
 		})
 		ipcMain.on('goBack', (event) => {
@@ -252,12 +252,12 @@ class FelidaBrowser {
 			}
 			logger(parsed)
 			event.returnValue = parsed
-		
+
 		})
 
-		ipcMain.on('setListBookmarks', (event, type, value='') => {
+		ipcMain.on('setListBookmarks', (event, type, value = '') => {
 			const parsed = JSON.parse(fs.readFileSync(__dirname + "/data/bookmarks.json"))
-			switch(type) {
+			switch (type) {
 				case 'purge':
 					fs.writeFileSync(__dirname + '/data/bookmarks.json', '[]')
 					break
@@ -331,7 +331,7 @@ class FelidaBrowser {
 		}
 	}
 
-	newTab(url=`file:///${__dirname}/views/index.html`) {
+	newTab(url = `file:///${__dirname}/views/index.html`) {
 		let id = Date.now()
 		logger(`New tab, id: ${id}`)
 		let newTab = new BrowserView({
@@ -341,7 +341,7 @@ class FelidaBrowser {
 			}
 		});
 		let size = this.mainWindow.getSize();
-		newTab.setBounds({ x: 0, y: 100, width: size[0], height: size[1]});
+		newTab.setBounds({ x: 0, y: 100, width: size[0], height: size[1] });
 		newTab.webContents.loadURL(url)
 
 		function updateData(dts) {
@@ -354,20 +354,20 @@ class FelidaBrowser {
 		// fullscreen fix
 		newTab.webContents.on('enter-html-full-screen', (event) => {
 			this.mainWindow.removeBrowserView(this.etabsView);
-			
+
 			let size = this.mainWindow.getSize();
 			this.tabs[this.activeTab].setBounds({ x: 0, y: 0, width: size[0], height: size[1] });
 		})
-		
+
 		newTab.webContents.on('leave-html-full-screen', (event) => {
 			this.mainWindow.addBrowserView(this.etabsView);
 			this.updateSizes();
 		})
-		
+
 		newTab.webContents.on('page-title-updated', (event, title, explicitSet) => {
 			logger(`Tab ${id} changed title to ${title}`)
 			newTab.title = title
-			this.mainWindow.setTitle(title + " | Felida Browser")
+			this.mainWindow.setTitle(title + " | Solak Browser")
 			this.dataToSend = updateData(this.dataToSend)
 		})
 
@@ -416,8 +416,8 @@ class FelidaBrowser {
 			newTab.ID = null
 			this.dataToSend = updateData(this.dataToSend)
 		})
-		
-        /* this thing crashed
+
+		/* this thing crashed
 		newTab.webContents.setWindowOpenHandler((el) => {
 			switch(el.disposition) {
 				case 'save-to-disk':
@@ -425,7 +425,7 @@ class FelidaBrowser {
 					break
 				default:
 					ipcRenderer.send("triggerNewTab", el.url)
-				    break
+					break
 			}
 		})
 		*/
