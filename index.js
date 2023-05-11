@@ -38,7 +38,7 @@ const BOOKMARKS_TEMPLATE = [
 	},
 	{
 		title: "Solak Browser",
-		icon: "file:///home/raluca/Desktop/devs/FelidaBrowser/assets/icon.png",
+		icon: "file:///home/raluca/Desktop/devs/FelidaBrowser/assets/solakPng.png",
 		url: "https://github.com/raluvy95/FelidaBrowser"
 	},
 	{
@@ -107,7 +107,7 @@ class FelidaBrowser {
 				nodeIntegration: true
 			},
 			title: 'Solak Browser',
-			icon: './assets/icon.png',
+			icon: './assets/solakPng.png',
 			show: false,
 		});
 
