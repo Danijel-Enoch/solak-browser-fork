@@ -92,7 +92,7 @@ class FelidaBrowser {
 				nodeIntegration: true
 			},
 			title: 'Solak Browser',
-			icon: './assets/solakPng.png',
+			icon: 'https://res.cloudinary.com/daniel23/image/upload/v1683806022/logo_fucblf.jpg',
 			show: false,
 		});
 

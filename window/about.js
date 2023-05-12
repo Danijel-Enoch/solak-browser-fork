@@ -11,7 +11,7 @@ const about = (top) => {
 		width: 500,
 		height: 300,
 		title: 'Solak Browser',
-		icon: './assets/icon.png'
+		icon: 'https://res.cloudinary.com/daniel23/image/upload/v1683806022/logo_fucblf.jpg'
 	})
 
 	win.maximizable = false;
