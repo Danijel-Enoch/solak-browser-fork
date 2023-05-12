@@ -27,35 +27,20 @@ const fetch = require("node-fetch")
 
 const BOOKMARKS_TEMPLATE = [
 	{
-		title: "YouTube",
-		icon: "https://www.youtube.com/s/desktop/40777624/img/favicon.ico",
-		url: "https://youtube.com"
+		title: "SolakDex",
+		icon: "https://res.cloudinary.com/daniel23/image/upload/v1683806022/logo_fucblf.jpg",
+		url: "https://google.com"
 	},
 	{
-		title: "GitHub",
-		icon: "https://github.githubassets.com/favicons/favicon-dark.png",
-		url: "https://github.com"
+		title: "MarketPlace",
+		icon: "https://res.cloudinary.com/daniel23/image/upload/v1683806022/logo_fucblf.jpg",
+		url: "https://google.com"
 	},
 	{
-		title: "Solak Browser",
-		icon: "file:///home/raluca/Desktop/devs/FelidaBrowser/assets/solakPng.png",
-		url: "https://github.com/raluvy95/FelidaBrowser"
+		title: "Lending and Borrowing",
+		icon: "https://res.cloudinary.com/daniel23/image/upload/v1683806022/logo_fucblf.jpg",
+		url: "https://google.com"
 	},
-	{
-		title: "Twitter",
-		icon: "https://abs.twimg.com/favicons/twitter.2.ico",
-		url: "https://twitter.com"
-	},
-	{
-		title: "Facebook",
-		icon: "https://static.xx.fbcdn.net/rsrc.php/yb/r/hLRJ1GG_y0J.ico",
-		url: "https://facebook.com"
-	},
-	{
-		title: "Reddit",
-		icon: "https://www.redditstatic.com/desktop2x/img/favicon/android-icon-192x192.png",
-		url: "https://reddit.com"
-	}
 ]
 
 console.log(__dirname)
