@@ -10,7 +10,7 @@
 		"watch": "nodemon -i ./data --exec ./run.bat",
 		"deb64": "electron-installer-debian --src build/solak-linux-x64/ --dest build/installers/ --arch amd64",
 		"dmg-setup": "electron-installer-dmg build/solak-darwin-x64/solak.app solak",
-		"exe-setup":"electron-installer-windows --src build/solak-win32-x64/ --dest build/installer"
+		"exe-setup":"electron-installer-windows --src build/solak-win32-x64/ --dest build/installer --icon=./assets/icon.ico"
 	},
 	"author": "enochDanijel",
 	"dependencies": {

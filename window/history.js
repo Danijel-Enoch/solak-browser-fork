@@ -12,7 +12,7 @@ const history = (top) => {
 		width: 700,
 		height: 500,
 		title: 'Browsing history',
-		icon: 'https://res.cloudinary.com/daniel23/image/upload/v1683806022/logo_fucblf.jpg'
+		icon: '../assets/icon.ico'
 	})
 	
 	win.maximizable = true;

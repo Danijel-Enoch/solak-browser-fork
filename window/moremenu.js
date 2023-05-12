@@ -11,7 +11,7 @@ const moremenu = (top) => {
 		width: 300,
 		height: 420,
 		title: 'Solak Browser',
-		icon: 'https://res.cloudinary.com/daniel23/image/upload/v1683806022/logo_fucblf.jpg'
+		icon: '../assets/icon.ico'
 	})
 
 	win.maximizable = false;

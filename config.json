@@ -1,5 +1,6 @@
 {
     "dest": "build/installers/",
+    "icon": "./assets/icon.ico",
     "tags": [
       "Utility"
     ]

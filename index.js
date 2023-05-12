@@ -28,17 +28,17 @@ const fetch = require("node-fetch")
 const BOOKMARKS_TEMPLATE = [
 	{
 		title: "SolakDex",
-		icon: "https://res.cloudinary.com/daniel23/image/upload/v1683806022/logo_fucblf.jpg",
+		icon: "./assets/icon.ico",
 		url: "https://google.com"
 	},
 	{
 		title: "MarketPlace",
-		icon: "https://res.cloudinary.com/daniel23/image/upload/v1683806022/logo_fucblf.jpg",
+		icon: "./assets/icon.ico",
 		url: "https://google.com"
 	},
 	{
 		title: "Lending and Borrowing",
-		icon: "https://res.cloudinary.com/daniel23/image/upload/v1683806022/logo_fucblf.jpg",
+		icon: "./assets/icon.ico",
 		url: "https://google.com"
 	},
 ]
@@ -92,7 +92,7 @@ class FelidaBrowser {
 				nodeIntegration: true
 			},
 			title: 'Solak Browser',
-			icon: 'https://res.cloudinary.com/daniel23/image/upload/v1683806022/logo_fucblf.jpg',
+			icon: './assets/icon.ico',
 			show: false,
 		});
 
