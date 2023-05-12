@@ -1,34 +1,39 @@
 {
-  "name": "felida",
-  "version": "0.2.3",
-  "description": "A lightweight chromium browser using Electron.js",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npx electron-packager . felida --icon ./assets/icon.png  --out ./build --ignore='\\.gitignore'",
-    "watch": "nodemon -i ./data --exec ./run.sh"
-  },
-  "author": "raluvy95",
-  "dependencies": {
-    "@cliqz/adblocker-electron": "^1.25.1",
-    "draggabilly": "^3.0.0",
-    "electron": "^21.2.0",
-    "electron-context-menu": "^3.6.0",
-    "jquery": "^3.6.1",
-    "node-fetch": "^2.6.1"
-  },
-  "type": "commonjs",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/raluvy95/FelidaBrowser.git"
-  },
-  "license": "GPL-3.0-or-later",
-  "bugs": {
-    "url": "https://github.com/raluvy95/FelidaBrowser/issues"
-  },
-  "homepage": "https://github.com/raluvy95/FelidaBrowser#readme",
-  "devDependencies": {
-    "electron-packager": "^17.0.0",
-    "nodemon": "^2.0.20"
-  }
+	"name": "solak",
+	"version": "0.2.3",
+	"description": "A lightweight chromium browser using Electron.js",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"build": "npx electron-packager . solak --platform=win32 --icon ./assets/icon.png  --out ./build --ignore='\\.gitignore'",
+		"watch": "nodemon -i ./data --exec ./run.sh",
+		"deb64": "electron-installer-debian --src build/solak-linux-x64/ --dest build/installers/ --arch amd64",
+		"dmg-setup": "electron-installer-dmg ./build/solak-darwin-x64/solak.app solak"
+	},
+	"author": "enochDanijel",
+	"dependencies": {
+		"@cliqz/adblocker-electron": "^1.25.1",
+		"draggabilly": "^3.0.0",
+		"electron": "^21.2.0",
+		"electron-context-menu": "^3.6.0",
+		"jquery": "^3.6.1",
+		"macos-alias": "^0.2.11",
+		"node-fetch": "^2.6.1"
+	},
+	"type": "commonjs",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/raluvy95/FelidaBrowser.git"
+	},
+	"license": "GPL-3.0-or-later",
+	"bugs": {
+		"url": "https://github.com/raluvy95/FelidaBrowser/issues"
+	},
+	"homepage": "https://github.com/raluvy95/FelidaBrowser#readme",
+	"devDependencies": {
+		"electron-installer-debian": "^3.1.0",
+		"electron-installer-dmg": "^4.0.0",
+		"electron-packager": "^17.0.0",
+		"nodemon": "^2.0.20"
+	}
 }
