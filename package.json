@@ -5,10 +5,11 @@
 	"main": "index.js",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
-		"build": "npx electron-packager . solak --platform=win32 --icon ./assets/icon.png  --out ./build --ignore='\\.gitignore'",
+		"build": "npx electron-packager . solak --icon ./assets/icon.png  --out ./build --ignore='\\.gitignore'",
+		"build-linux": "npx electron-packager . solak --platform=linux --icon ./assets/icon.png  --out ./build --ignore='\\.gitignore'",
 		"watch": "nodemon -i ./data --exec ./run.sh",
 		"deb64": "electron-installer-debian --src build/solak-linux-x64/ --dest build/installers/ --arch amd64",
-		"dmg-setup": "electron-installer-dmg ./build/solak-darwin-x64/solak.app solak"
+		"dmg-setup": "electron-installer-dmg build/solak-darwin-x64/solak.app solak"
 	},
 	"author": "enochDanijel",
 	"dependencies": {
