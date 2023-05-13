@@ -1,7 +1,7 @@
 <p align="center"><img width="250" height="250" src="./assets/mascot.svg" alt="Felida icon"></p>
 <h1 align="center"> Solak Browser</h1>
 
-<img src="./assets/screenshot.png" alt="Felida icon">
+<img src="./assets/solakPng.png" alt="Felida icon">
 
 # Features
 

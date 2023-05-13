@@ -24,13 +24,13 @@
 	"type": "commonjs",
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/raluvy95/FelidaBrowser.git"
+		"url": "git+https://github.com/Danijel-Enoch/solak-browser-fork"
 	},
 	"license": "GPL-3.0-or-later",
 	"bugs": {
-		"url": "https://github.com/raluvy95/FelidaBrowser/issues"
+		"url": "https://github.com/Danijel-Enoch/solak-browser-fork"
 	},
-	"homepage": "https://github.com/raluvy95/FelidaBrowser#readme",
+	"homepage": "https://github.com/Danijel-Enoch/solak-browser-fork#readme",
 	"devDependencies": {
 		"electron-installer-dmg": "^4.0.0",
 		"electron-installer-windows": "^3.0.0",
