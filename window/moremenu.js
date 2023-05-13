@@ -11,7 +11,7 @@ const moremenu = (top) => {
 		width: 300,
 		height: 420,
 		title: 'Solak Browser',
-		icon: '../assets/icon.ico'
+		icon: '../assets/solakPng.png'
 	})
 
 	win.maximizable = false;

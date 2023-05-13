@@ -24,7 +24,7 @@ function open(top) {
 		width: 700,
 		height: 500,
 		title: 'Solak Browser - Settings',
-		icon: '../assets/icon.ico'
+		icon: '../assets/solakPng.png'
 	})
 
 	win.maximizable = false;

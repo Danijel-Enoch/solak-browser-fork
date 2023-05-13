@@ -1,6 +1,6 @@
 {
 	"name": "solak",
-	"version": "0.2.3",
+	"version": "0.2.7",
 	"description": "A lightweight chromium browser using Electron.js",
 	"main": "index.js",
 	"scripts": {
@@ -10,13 +10,30 @@
 		"watch": "nodemon -i ./data --exec ./run.bat",
 		"deb64": "electron-installer-debian --src build/solak-linux-x64/ --dest build/installers/ --arch amd64",
 		"dmg-setup": "electron-installer-dmg build/solak-darwin-x64/solak.app solak",
-		"exe-setup":"electron-installer-windows --src build/solak-win32-x64/ --dest build/installer --icon=./assets/icon.ico"
+		"exe-setup": "electron-installer-windows --src build/solak-win32-x64/ --dest build/installer --icon=./assets/icon.ico",
+		"exe-build": "electron-builder"
+	},
+	"build": {
+		"appId": "solak",
+		"win": {
+			"target": [
+				"nsis"
+			]
+		},
+		"nsis":{
+			"createDesktopShortcut":true,
+			"createStartMenuShortcut":true,
+			"installerIcon":"./icon.ico",
+			"uninstallerIcon":"./icon.ico",
+			"installerHeaderIcon":"./icon.ico"
+
+		}
 	},
 	"author": "enochDanijel",
 	"dependencies": {
 		"@cliqz/adblocker-electron": "^1.25.1",
 		"draggabilly": "^3.0.0",
-		"electron": "^21.2.0",
+		
 		"electron-context-menu": "^3.6.0",
 		"jquery": "^3.6.1",
 		"node-fetch": "^2.6.1"
@@ -35,6 +52,8 @@
 		"electron-installer-dmg": "^4.0.0",
 		"electron-installer-windows": "^3.0.0",
 		"electron-packager": "^17.0.0",
+		"electron": "^21.2.0",
+		"electron-builder": "^23.6.0",
 		"nodemon": "^2.0.20"
 	}
 }

@@ -11,7 +11,7 @@ const bookmark = (top) => {
 		width: 500,
 		height: 300,
 		title: 'Solak Browser',
-		icon: '../assets/icon.ico'
+		icon: undefined
 	})
 
 	win.maximizable = false;

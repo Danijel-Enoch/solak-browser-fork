@@ -11,7 +11,7 @@ const about = (top) => {
 		width: 500,
 		height: 300,
 		title: 'Solak Browser',
-		icon: '../assets/icon.ico'
+		icon: './../icon.ico'
 	})
 
 	win.maximizable = false;

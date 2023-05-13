@@ -28,27 +28,27 @@ const fetch = require("node-fetch")
 const BOOKMARKS_TEMPLATE = [
 	{
 		title: "SolakDex",
-		icon: "./assets/icon.ico",
+		icon: "https://res.cloudinary.com/daniel23/image/upload/v1683806022/logo_fucblf.jpg",
 		url: "https://google.com"
 	},
 	{
 		title: "NFT MarketPlace",
-		icon: "./assets/icon.ico",
+		icon: "https://res.cloudinary.com/daniel23/image/upload/v1683806022/logo_fucblf.jpg",
 		url: "https://google.com"
 	},
 	{
 		title: "Lending and Borrowing",
-		icon: "./assets/icon.ico",
+		icon: "https://res.cloudinary.com/daniel23/image/upload/v1683806022/logo_fucblf.jpg",
 		url: "https://google.com"
 	},
 	{
 		title: "Swap",
-		icon: "./assets/icon.ico",
+		icon: "https://res.cloudinary.com/daniel23/image/upload/v1683806022/logo_fucblf.jpg",
 		url: "https://google.com"
 	},
 	{
 		title: "SolakGPT",
-		icon: "./assets/icon.ico",
+		icon: "https://res.cloudinary.com/daniel23/image/upload/v1683806022/logo_fucblf.jpg",
 		url: "https://google.com"
 	},
 ]
