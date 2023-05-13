@@ -32,12 +32,22 @@ const BOOKMARKS_TEMPLATE = [
 		url: "https://google.com"
 	},
 	{
-		title: "MarketPlace",
+		title: "NFT MarketPlace",
 		icon: "./assets/icon.ico",
 		url: "https://google.com"
 	},
 	{
 		title: "Lending and Borrowing",
+		icon: "./assets/icon.ico",
+		url: "https://google.com"
+	},
+	{
+		title: "Swap",
+		icon: "./assets/icon.ico",
+		url: "https://google.com"
+	},
+	{
+		title: "SolakGPT",
 		icon: "./assets/icon.ico",
 		url: "https://google.com"
 	},
