@@ -12,7 +12,7 @@ const history = (top) => {
 		width: 700,
 		height: 500,
 		title: 'Browsing history',
-		icon: '../assets/solakPng.png'
+		icon: 'icon.ico'
 	})
 	
 	win.maximizable = true;

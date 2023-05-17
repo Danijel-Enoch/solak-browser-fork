@@ -21,10 +21,11 @@ function open(top) {
 		parent: top,
 		modal: true,
 		show: false,
+		frame:true,
 		width: 700,
 		height: 500,
 		title: 'Solak Browser - Settings',
-		icon: '../assets/solakPng.png'
+		icon: 'icon.ico'
 	})
 
 	win.maximizable = false;

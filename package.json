@@ -1,16 +1,16 @@
 {
-	"name": "solak",
-	"version": "0.2.7",
+	"name": "solak-browser",
+	"version": "0.2.9",
 	"description": "A lightweight chromium browser using Electron.js",
 	"main": "index.js",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
-		"build": "npx electron-packager . solak   --platform=win32  --icon=./assets/icon.ico --out ./build --ignore='\\.gitignore'",
+		"build": "npx electron-packager . solak-browser   --platform=win32  --icon=./assets/icon.ico --out ./build --ignore='\\.gitignore'",
 		"build-linux": "npx electron-packager . solak --platform=linux --icon ./assets/icon.png  --out ./build --ignore='\\.gitignore'",
 		"watch": "nodemon -i ./data --exec ./run.bat",
 		"deb64": "electron-installer-debian --src build/solak-linux-x64/ --dest build/installers/ --arch amd64",
 		"dmg-setup": "electron-installer-dmg build/solak-darwin-x64/solak.app solak",
-		"exe-setup": "electron-installer-windows --src build/solak-win32-x64/ --dest build/installer --icon=./assets/icon.ico",
+		"exe-setup": "electron-installer-windows --src build/solak-browser-win32-x64/ --dest build/installer --icon=./assets/icon.ico",
 		"exe-build": "electron-builder"
 	},
 	"build": {

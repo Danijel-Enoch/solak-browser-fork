@@ -43,7 +43,7 @@
 <body>
 	<h1>Solak Ecosystem Browser</h1><br>
 	<p class="info">A lightweight Chromium browser using Electron.js</p>
-	<img src="../assets/mascot.svg" width="200" align=left>
+	<img src="../assets/solakPng.png" width="200" align=left>
 	<p class="version">
 		Version: <span id="felida"></span><br>
 		Chrome: <span id="chrome"></span><br>
@@ -65,7 +65,7 @@
 			ipcRenderer.send("aboutClose")
 		})
 		document.getElementById("copy").addEventListener("click", () => {
-			const txt = `**Felida:** ${document.getElementById("felida").innerHTML}
+			const txt = `**Solak:** ${document.getElementById("felida").innerHTML}
 **Chrome:** ${document.getElementById("chrome").innerHTML}
 **Electron:** ${document.getElementById("electron").innerHTML}
 **NodeJS:** ${document.getElementById("node").innerHTML}`

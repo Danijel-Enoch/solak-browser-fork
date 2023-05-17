@@ -102,7 +102,7 @@ class FelidaBrowser {
 				nodeIntegration: true
 			},
 			title: 'Solak Browser',
-			icon: './assets/icon.ico',
+			icon: 'icon.ico',
 			show: false,
 		});
 
